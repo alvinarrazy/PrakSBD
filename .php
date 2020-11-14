@@ -17,6 +17,7 @@
             </tr>
         </table>
 
+        <form name="update_user" method="post" action="edit.php">
         <table border="0">
             <tr> 
                 <td>Name</td>
@@ -35,3 +36,4 @@
                 <td><input type="submit" name="update" value="Update"></td>
             </tr>
         </table>
+    </form>
