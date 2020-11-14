@@ -62,7 +62,8 @@ while($user_data = mysqli_fetch_array($result))
 			<h1>Edit Data Dosen</h1>
 			<form action="auth" method="POST">
 				<input type="text" name="nama_dosen" value=<?php echo $name;?> required>
-				<input type="text" name="mobile" value=<?php echo $mobile;?> required>
+                <input type="text" name="mobile" value=<?php echo $mobile;?> required>
+                <input type="hidden" name="id" value=<?php echo $_GET['id'];?>>
 				<input type="submit" name="Update" value="Update">
 			</form>
 		</div>

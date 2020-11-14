@@ -22,7 +22,7 @@ $result1 = mysqli_query($mysqli, "SELECT * FROM dosen_wali ORDER BY nik DESC");
             <ul class="nav-menu">
                 <a class="nav-links" href="./mahasiswaComponents/add.php">Tambah Mahasiswa Baru</a>
                 <a class="nav-links" href="firstPage.php">Tabel Dosen</a>
-                <a class="nav-links" href="thirdPage.php">Tampilkan ...</a>
+                <a class="nav-links" href="thirdPage.php">Tampilkan JOIN</a>
             </ul>
             </div>
     </div>

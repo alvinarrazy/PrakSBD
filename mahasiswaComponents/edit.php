@@ -5,7 +5,7 @@ include_once("../config.php");
 // Check if form is submitted for user update, then redirect to homepage after update
 if(isset($_POST['update']))
 {   
-    $id = $_POST['nim'];
+    $id = $_POST['id'];
 
     $name=$_POST['nama_mahasiswa'];
     $mobile=$_POST['mobile'];
@@ -61,7 +61,8 @@ while($user_data = mysqli_fetch_array($result))
 			<h1>Edit Data Mahasiswa</h1>
 			<form action="auth" method="POST">
 				<input type="text" name="nama_mahasiswa" value=<?php echo $name;?> required>
-				<input type="text" name="mobile" value=<?php echo $mobile;?> required>
+                <input type="text" name="mobile" value=<?php echo $mobile;?> required>
+                <input type="hidden" name="id" value=<?php echo $_GET['id'];?>>
 				<input type="submit" name="update" value="Update">
 			</form>
 		</div>
