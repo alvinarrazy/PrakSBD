@@ -3,8 +3,8 @@
 include_once("config.php");
 
 // Fetch all users data from database
-$result = mysqli_query($mysqli, "SELECT * FROM mahasiswa ORDER BY nim DESC");
-$result1 = mysqli_query($mysqli, "SELECT * FROM dosen_wali ORDER BY nik DESC");
+$result = mysqli_query($mysqli, "SELECT * FROM mahasiswa ORDER BY nim ASC");
+$result1 = mysqli_query($mysqli, "SELECT * FROM dosen_wali ORDER BY nik ASC");
 ?>
 <style>
 <?php include 'styles/Navbar.css'; ?>
