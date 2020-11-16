@@ -52,7 +52,7 @@
 
         // Show message when user added
         unset($_POST['Submit']);
-        echo "User added successfully. <a href='../firstPage.php'>Lihat Tabel Mahasiswa</a>";
+        echo "User added successfully. <a href='../secondPage.php'>Lihat Tabel Mahasiswa</a>";
     }
     ?>
 </body>
