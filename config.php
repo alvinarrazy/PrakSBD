@@ -1,7 +1,7 @@
 <?php
 
 $databaseHost = 'localhost';
-$databaseName = 'modul1_sbd_db';
+$databaseName = 'ta_sbd';
 $databaseUsername = 'root';
 $databasePassword = '';
 
