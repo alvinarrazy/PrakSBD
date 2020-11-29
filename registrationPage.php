@@ -6,7 +6,7 @@
 
 <html>
 <head>
-    <title>Tambah Dosen</title>
+    <title>New Admin</title>
     <div class="navbar">
             <div class="navbar-logo">
                 TA SBD ALVIN
@@ -25,13 +25,14 @@
 
 <body>
     <br/><br/>
-    <form action="./actions/loginAction.php" method="post" name="form1">
+    <form action="./actions/registerAction.php" method="post" name="form1">
 		<div class="login-form">
-			<h1>Login Administrator</h1>
+			<h1>Register New Administrator</h1>
 			<form action="auth" method="POST">
 				<input type="text" name="username" placeholder="Username" required>
                 <input type="password" name="password" placeholder="Password" required>
-				<input type="submit" name="Submit" value="Login">
+                <input type="password" name="confpassword" placeholder="Confirm Password" required>
+				<input type="submit" name="Submit" value="Add Admin">
 			</form>
 		</div>
     </form>

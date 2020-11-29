@@ -8,10 +8,10 @@ if(isset($_POST['Update']))
     $id = $_POST['id'];
 
     $name=$_POST['nama_dosen'];
-    $mobile=$_POST['mobile'];
+    $nik=$_POST['nik'];
 
     // update user data
-    $result = mysqli_query($mysqli, "UPDATE dosen_wali SET nama_dosen='$name',mobile='$mobile' WHERE nik=$id");
+    $result = mysqli_query($mysqli, "UPDATE dosen SET nama_dosen='$name',nik='$nik' WHERE nik=$id");
 
     // Redirect to homepage to display updated user in list
     unset($_POST['Update']);
@@ -31,12 +31,12 @@ if(isset($_POST['Update']))
 $id = $_GET['id'];
 
 // Fetech user data based on id
-$result = mysqli_query($mysqli, "SELECT * FROM dosen_wali WHERE nik=$id");
+$result = mysqli_query($mysqli, "SELECT * FROM dosen WHERE nik=$id");
 
 while($user_data = mysqli_fetch_array($result))
 {
     $name = $user_data['nama_dosen'];
-    $mobile = $user_data['mobile'];
+    $nik = $user_data['nik'];
 }
 ?>
 <html>
@@ -62,7 +62,7 @@ while($user_data = mysqli_fetch_array($result))
 			<h1>Edit Data Dosen</h1>
 			<form action="auth" method="POST">
 				<input type="text" name="nama_dosen" value=<?php echo $name;?> required>
-                <input type="text" name="mobile" value=<?php echo $mobile;?> required>
+                <input type="text" name="nik" value=<?php echo $nik;?> required>
                 <input type="hidden" name="id" value=<?php echo $_GET['id'];?>>
 				<input type="submit" name="Update" value="Update">
 			</form>

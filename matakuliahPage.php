@@ -3,7 +3,8 @@
 include_once("config.php");
 
 // Fetch all users data from database
-$results = mysqli_query($mysqli, "SELECT * FROM dosen ORDER BY nik ASC");
+$result = mysqli_query($mysqli, "SELECT * FROM matakuliah ORDER BY kode_mk ASC");
+
 ?>
 <style>
 <?php include 'styles/Navbar.css'; ?>
@@ -12,16 +13,16 @@ $results = mysqli_query($mysqli, "SELECT * FROM dosen ORDER BY nik ASC");
 
 <html>
 <head>    
-    <title>Tabel Dosen</title>
+    <title>Tabel Mahasiswa</title>
     <div class="navbar">
             <div class="navbar-logo">
                 KELOMPOK 17
             </div>
             <div>
             <ul class="nav-menu">
-                <a class="nav-links" href="./dosenComponents/add.php">Tambah Dosen Baru</a>
+                <a class="nav-links" href="./matakuliahComponents/add.php">Tambah Matkul</a>
+                <a class="nav-links" href="firstPage.php">Tabel Dosen</a>
                 <a class="nav-links" href="secondPage.php">Tabel Mahasiswa</a>
-                <a class="nav-links" href="matakuliahPage.php">Tabel Matakuliah</a>
                 <a class="nav-links" href="thirdPage.php">View</a>
                 <a class="nav-links" href="logoutPage.php">Logout</a>
             </ul>
@@ -31,12 +32,12 @@ $results = mysqli_query($mysqli, "SELECT * FROM dosen ORDER BY nik ASC");
 
 <body>
 
-    <h2>Dosen</h2>
+    <h2>Mahasiswa</h2>
 
     <table class="darkTable" width='80%' border=1>
     <thead>
         <tr>
-            <th>NIK</th> <th>Nama</th> <th>Update</th>
+            <th>Kode MK</th> <th>Nama MK</th> <th>Dosen Pengampu</th> <th>Update</th>
         </tr>
     <thead>
     <?php  
@@ -45,13 +46,17 @@ $results = mysqli_query($mysqli, "SELECT * FROM dosen ORDER BY nik ASC");
           header("Location: loginPage.php");
           exit();
       }
-    while($user_data = mysqli_fetch_array($results)) {         
+
+      
+
+    while($user_data = mysqli_fetch_array($result)) {         
         echo "<tr>";
         echo "<tbody>";
-        echo "<td>".$user_data['nik']."</td>";
-        echo "<td>".$user_data['nama_dosen']."</td>";
-        // echo "<td>".$user_data['mobile']."</td>";    
-        echo "<td><a href='./dosenComponents/edit.php?id=$user_data[nik]'>Edit</a> | <a href='./dosenComponents/delete.php?id=$user_data[nik]'>Delete</a></td></tr>";        
+        echo "<td>".$user_data['kode_mk']."</td>";
+        echo "<td>".$user_data['nama_mk']."</td>";
+        echo "<td>".$user_data['nik_dosen']."</td>";
+        // echo "<td>".$user_data['mobile']."</td>"; 
+        echo "<td><a href='matakuliahComponents/edit.php?id=$user_data[kode_mk]'>Edit</a> | <a href='matakuliahComponents/delete.php?id=$user_data[kode_mk]'>Delete</a></td></tr>";        
         echo "</tbody>";
     }
     ?>
