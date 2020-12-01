@@ -6,8 +6,8 @@ include_once("../config.php");
 $id = $_GET['id'];
 
 // Delete user row from table based on given id
-$result = mysqli_query($mysqli, "DELETE FROM dosen WHERE nik=$id");
+$result = mysqli_query($mysqli, "DELETE FROM absensi WHERE id_absen=$id");
 
 // After delete redirect to Home, so that latest user list will be displayed.
-header("Location:../firstPage.php");
+header("Location:../listAbsensi.php");
 ?>
