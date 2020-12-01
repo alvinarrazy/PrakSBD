@@ -17,6 +17,8 @@
             if(mysqli_num_rows($resultPass)==1){
                 $_SESSION['user_name'] = $resultArr['username'];
                 echo 'Login Success';
+                header("Location: ../firstPage.php");
+                exit();
             }
         }
         // Show message when user added

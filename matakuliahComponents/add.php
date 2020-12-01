@@ -6,10 +6,10 @@
 
 <html>
 <head>
-    <title>Tambah Dosen</title>
+    <title>Sistem Akademik</title>
     <div class="navbar">
             <div class="navbar-logo">
-                KELOMPOK 17
+                Sistem Akademik
             </div>
             <div>
             <ul class="nav-menu">

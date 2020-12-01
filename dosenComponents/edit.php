@@ -44,7 +44,7 @@ while($user_data = mysqli_fetch_array($result))
     <title>Edit Data Dosen</title>
     <div class="navbar">
             <div class="navbar-logo">
-                KELOMPOK 17
+                Sistem Akademik
             </div>
             <div>
             <ul class="nav-menu">

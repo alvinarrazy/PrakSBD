@@ -8,10 +8,10 @@ if(isset($_POST['update']))
     $id = $_POST['id'];
 
     $name=$_POST['nama_mahasiswa'];
-    $mobile=$_POST['mobile'];
+    $nim=$_POST['nim'];
 
     // update user data
-    $result = mysqli_query($mysqli, "UPDATE mahasiswa SET name='$name',mobile='$mobile' WHERE nim=$id");
+    $result = mysqli_query($mysqli, "UPDATE mahasiswa SET nama_mahasiswa='$name', nim='$nim' WHERE nim=$id");
 
     // Redirect to homepage to display updated user in list
     header("Location: ../secondPage.php");
@@ -43,7 +43,7 @@ while($user_data = mysqli_fetch_array($result))
     <title>Edit Data Dosen</title>
     <div class="navbar">
             <div class="navbar-logo">
-                KELOMPOK 17
+                Sistem Akademik
             </div>
             <div>
             <ul class="nav-menu">

@@ -17,7 +17,7 @@ $result2 = mysqli_query($mysqli, "SELECT A.nim, A.nama_mahasiswa, B.nama_dosen F
     <title>Tabel Dosen</title>
     <div class="navbar">
             <div class="navbar-logo">
-                KELOMPOK 17
+                Sistem Akademik
             </div>
             <div>
             <ul class="nav-menu">

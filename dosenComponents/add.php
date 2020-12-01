@@ -6,10 +6,10 @@
 
 <html>
 <head>
-    <title>Tambah Dosen</title>
+    <title>Sistem Akademik</title>
     <div class="navbar">
             <div class="navbar-logo">
-                KELOMPOK 17
+                Sistem Akademik
             </div>
             <div>
             <ul class="nav-menu">
@@ -24,7 +24,7 @@
     <br/><br/>
     <form action="add.php" method="post" name="form1">
 		<div class="login-form">
-			<h1>Tambah Dosen Baru</h1>
+			<h1>Sistem Akademik Baru</h1>
 			<form action="auth" method="POST">
 				<input type="text" name="nik" placeholder="NIK" required>
 				<input type="text" name="nama_dosen" placeholder="Nama" required>

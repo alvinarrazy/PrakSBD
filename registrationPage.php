@@ -16,7 +16,7 @@
                 <!-- <a class="nav-links" href="../registerPage.php">New Admin</a> -->
                 <!-- <a class="nav-links" href="../secondPage.php">Tabel Mahasiswa</a>
                 <a class="nav-links" href="../firstPage.php">Tabel Dosen</a>
-                <a class="nav-links" href="../thirdPage.php">Tampilkan ...</a> -->
+                <a class="nav-links" href="../matkuldiambilPage.php">Tampilkan ...</a> -->
             </ul>
             </div>
     </div>

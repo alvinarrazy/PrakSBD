@@ -6,17 +6,14 @@
 
 <html>
 <head>
-    <title>Tambah Dosen</title>
+    <title>Sistem Akademik</title>
     <div class="navbar">
             <div class="navbar-logo">
                 TA SBD ALVIN
             </div>
             <div>
             <ul class="nav-menu">
-                <!-- <a class="nav-links" href="../registerPage.php">New Admin</a> -->
-                <!-- <a class="nav-links" href="../secondPage.php">Tabel Mahasiswa</a>
-                <a class="nav-links" href="../firstPage.php">Tabel Dosen</a>
-                <a class="nav-links" href="../thirdPage.php">Tampilkan ...</a> -->
+                <a class="nav-links" href="registrationPage.php">Admin Baru</a>
             </ul>
             </div>
     </div>

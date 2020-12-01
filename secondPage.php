@@ -15,14 +15,14 @@ $result = mysqli_query($mysqli, "SELECT * FROM mahasiswa ORDER BY nim ASC");
     <title>Tabel Mahasiswa</title>
     <div class="navbar">
             <div class="navbar-logo">
-                KELOMPOK 17
+                Sistem Akademik
             </div>
             <div>
             <ul class="nav-menu">
                 <a class="nav-links" href="./mahasiswaComponents/add.php">Tambah Mahasiswa Baru</a>
                 <a class="nav-links" href="firstPage.php">Tabel Dosen</a>
                 <a class="nav-links" href="matakuliahPage.php">Tabel Matakuliah</a>
-                <a class="nav-links" href="thirdPage.php">View</a>
+                <a class="nav-links" href="matkuldiambilPage.php">View</a>
                 <a class="nav-links" href="logoutPage.php">Logout</a>
             </ul>
             </div>

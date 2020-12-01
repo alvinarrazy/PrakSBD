@@ -17,6 +17,6 @@ if(isset($_POST['Submit'])) {
 
     // Show message when user added
     unset($_POST['Submit']);
-    echo "Admin added successfully. <a href='./loginPage.php'>Go to Login Page</a>";
+    echo "Admin added successfully. <a href='../loginPage.php'>Go to Login Page</a>";
 }
 ?>
