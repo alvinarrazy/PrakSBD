@@ -21,6 +21,7 @@ $results = mysqli_query($mysqli, "SELECT * FROM list_karyawan ORDER BY id_kyn AS
             <ul class="nav-menu">
                 <a class="nav-links" href="./adminComponents/add.php">Tambah Karyawan Baru</a>
                 <a class="nav-links" href="listAbsensi.php">Tabel Absen</a>
+                <a class="nav-links" href="searchKaryawan.php">Cari Karyawan</a>
                 <a class="nav-links" href="./actions/logoutAction.php">Logout</a>
             </ul>
             </div>
@@ -30,7 +31,10 @@ $results = mysqli_query($mysqli, "SELECT * FROM list_karyawan ORDER BY id_kyn AS
 <body>
 
     <h2>Daftar Karyawan</h2>
-
+    <form action="searchKaryawan.php" method="post" name="form1">
+		<input type="text" name="carinama" placeholder="Nama" required>
+        <input type="submit" name="Submit" value="Cari">
+    </form>
     <table class="blueTable" width='80%' border=1>
     <thead>
         <tr>
